@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>登入頁</h1>
+    <form method="POST" action="{{ url_for('login') }}">
+      <label for="username">身分證號:</label>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">密碼:</label>
+      <input type="password" id="password" name="password"><br>
+      <input type="submit" value="登入">
+    </form>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+  </body>
+</html>

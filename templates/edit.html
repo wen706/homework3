@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>會員資料表單</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>會員資料表單</h2>
+        <form action="/edit" method="POST">
+                <label for="nm">姓名:</label>
+                <input type="text" id="nm" name="nm" value="{{data['nm']}}" required><br>
+                <label for="birth">生日:</label>
+                <input type="text" id="birth" name="birth" value="{{data['birth']}}"  required><br>
+                <label for="blood">血型:</label>
+                <input type="text" id="blood" name="blood" value="{{data['blood']}}"  required><br>
+                <label for="phone">手機:</label>
+                <input type="tel"  id="phone" name="phone" value="{{data['phone']}}"  required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="{{data['email']}}"  required><br>
+                <label for="idno">身份證號:</label>
+                <input type="text"  id="idno" name="idno" value="{{data['idno']}}"  required><br>
+                <label for="pwd">密碼:</label>
+                <input type="text"  id="pwd" name="pwd" value="{{data['pwd']}}"  required><br>
+                <input type="submit" value="送出">
+                <a href="/logout">登出</a>
+        </form>
+    </div>
+</body>
+</html>

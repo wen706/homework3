@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>會員資料檢視</title>
+</head>
+<body>
+    <div class="container">
+        <h2>會員資料檢視</h2>
+        <table border="1">
+            <tr>
+                <th>姓名</th>
+                <td>{{data['nm']}}</td>
+            </tr>
+            <tr>
+                <th>生日</th>
+                <td>{{data['birth']}}</td>
+            </tr>
+            <tr>
+                <th>血型</th>
+                <td>{{data['blood']}}</td>
+            </tr>
+            <tr>
+                <th>手機</th>
+                <td>{{data['phone']}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{data['email']}}</td>
+            </tr>
+            <tr>
+                <th>身份證號</th>
+                <td>{{data['idno']}}</td>
+            </tr>
+            <tr>
+                <th>密碼</th>
+                <td>{{data['pwd']}}</td>
+            </tr>
+        </table>
+        <a href="/edit">修改個人資訊</a>
+        <a href="/logout">登出</a>
+    </div>
+</body>
+</html>
